@@ -74,10 +74,6 @@ p {
   color: var(--orange-4);
 }
 
-p.indented {
-  padding-left: 2.5rem;
-}
-
 a.icon-link {
   height: 40px;
   width: 40px;
@@ -91,7 +87,37 @@ a.icon-link {
   fill: var(--orange-3);
 }
 
-.project_button {
-  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
-  display: flexbox;
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+  display: flex;
+  background-color: var(--red-2);
+  height: 150px;
+  width: 150px;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; */
+}
+
+.project-column {
+  max-width: 300px;
+  margin: 0 0.5rem 2.5rem 0.5rem;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-column img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.project-column > p {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
 }
